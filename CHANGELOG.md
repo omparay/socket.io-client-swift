@@ -1,3 +1,18 @@
+# v15.0.0
+
+- Swift 5
+
+# v14.0.0
+
+- Minimum version of the client is now Swift 4.2.
+- Add exponential backoff for reconnects, with `reconnectWaitMax` and `randomizationFactor` options [#1149](https://github.com/socketio/socket.io-client-swift/pull/1149)
+- `statusChange` event's data format adds a second value, the raw value of the status. This is for use in Objective-C. [#1147](https://github.com/socketio/socket.io-client-swift/issues/1147)
+
+# v13.4.0
+
+- Add emits with write completion handlers. [#1096](https://github.com/socketio/socket.io-client-swift/issues/1096)
+- Add ability to listen for when a websocket upgrade happens
+
 # v13.3.1
 
 - Fixes various bugs. [#857](https://github.com/socketio/socket.io-client-swift/issues/857), [#1078](https://github.com/socketio/socket.io-client-swift/issues/1078)
@@ -64,4 +79,3 @@ Important API changes
 - Adds `.sentPing` and `.gotPong` client events for tracking ping/pongs.
 - Makes the framework a single target.
 - Updates Starscream to 3.0
-

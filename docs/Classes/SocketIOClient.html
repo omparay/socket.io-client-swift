@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           SocketIO Docs
         </a>
-         (100% documented)
+         (98% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -174,6 +174,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:8SocketIO14NormalCallbacka">NormalCallback</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:8SocketIO4Posta">Post</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -294,7 +297,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">anyHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/SocketAnyEvent.html">SocketAnyEvent</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">anyHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/SocketAnyEvent.html">SocketAnyEvent</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span> <span class="p">{</span>
+  <span class="k">get</span>
+  <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -321,7 +326,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">handlers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/SocketEventHandler.html">SocketEventHandler</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">handlers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/SocketEventHandler.html">SocketEventHandler</a></span><span class="p">]</span> <span class="p">{</span>
+  <span class="k">get</span>
+  <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -349,7 +356,9 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SocketManagerSpec.html">SocketManagerSpec</a></span><span class="p">?</span></code></pre>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">manager</span><span class="p">:</span> <span class="nf">SocketManagerSpec</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">get</span>
+  <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -418,17 +427,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Initializers"></a>
-                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers">
-                  <h3 class="section-name">Initializers</h3>
-                </a>
-              </div>
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -484,6 +482,33 @@
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SocketIO@objc(cs)SocketIOClient(im)dealloc"></a>
+                    <a name="//apple_ref/swift/Method/deinit" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SocketIO@objc(cs)SocketIOClient(im)dealloc">deinit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">deinit</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -594,9 +619,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC10didConnectySS11toNamespace_tF"></a>
+                    <a name="/s:8SocketIO0A8IOClientC10didConnect11toNamespaceySS_tF"></a>
                     <a name="//apple_ref/swift/Method/didConnect(toNamespace:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC10didConnectySS11toNamespace_tF">didConnect(toNamespace:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC10didConnect11toNamespaceySS_tF">didConnect(toNamespace:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -641,9 +666,9 @@ then this is only called when the client connects to that namespace.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC13didDisconnectySS6reason_tF"></a>
+                    <a name="/s:8SocketIO0A8IOClientC13didDisconnect6reasonySS_tF"></a>
                     <a name="//apple_ref/swift/Method/didDisconnect(reason:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC13didDisconnectySS6reason_tF">didDisconnect(reason:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC13didDisconnect6reasonySS_tF">didDisconnect(reason:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -718,9 +743,9 @@ then this is only called when the client connects to that namespace.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC4emitySS_AA0A4Data_pdtF"></a>
-                    <a name="//apple_ref/swift/Method/emit(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC4emitySS_AA0A4Data_pdtF">emit(_:_:)</a>
+                    <a name="/s:8SocketIO0A8IOClientC4emit__10completionySS_AA0A4Data_pdyycSgtF"></a>
+                    <a name="//apple_ref/swift/Method/emit(_:_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC4emit__10completionySS_AA0A4Data_pdyycSgtF">emit(_:_:completion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -728,9 +753,9 @@ then this is only called when the client connects to that namespace.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Send an event to the server, with optional data items.</p>
+                        <p>Send an event to the server, with optional data items and optional write completion handler.</p>
 
-<p>If an error occurs trying to transform <code>items</code> into their socket representation, a <code><a href="../Enums/SocketClientEvent.html#/s:8SocketIO0A11ClientEventO5errorA2CmF">SocketClientEvent.error</a></code>
+<p>If an error occurs trying to transform <code>items</code> into their socket representation, a <code><a href="../Enums/SocketClientEvent.html#/s:8SocketIO0A11ClientEventO5erroryA2CmF">SocketClientEvent.error</a></code>
 will be emitted. The structure of the error data is <code>[eventName, items, theError]</code></p>
 
                       </div>
@@ -738,7 +763,7 @@ will be emitted. The structure of the error data is <code>[eventName, items, the
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">emit</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SocketData.html">SocketData</a></span><span class="o">...</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">emit</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SocketData.html">SocketData</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -767,6 +792,18 @@ will be emitted. The structure of the error data is <code>[eventName, items, the
                               <td>
                                 <div>
                                   <p>The items to send with this event. May be left out.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback called on transport write completion.</p>
                                 </div>
                               </td>
                             </tr>
@@ -838,9 +875,80 @@ will be emitted. The structure of the error data is <code>[eventName, items, the
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC11emitWithAckAA02OnF8CallbackCSS_AA0A4Data_pdtF"></a>
+                    <a name="/c:@M@SocketIO@objc(cs)SocketIOClient(im)emit:with:completion:"></a>
+                    <a name="//apple_ref/swift/Method/emit(_:with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SocketIO@objc(cs)SocketIOClient(im)emit:with:completion:">emit(_:with:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Same as emit, but meant for Objective-C</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">emit</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">items</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">],</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event to send.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The items to send with this event. Send an empty array to send no data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback called on transport write completion.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SocketIO0A8IOClientC11emitWithAckyAA02OnF8CallbackCSS_AA0A4Data_pdtF"></a>
                     <a name="//apple_ref/swift/Method/emitWithAck(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC11emitWithAckAA02OnF8CallbackCSS_AA0A4Data_pdtF">emitWithAck(_:_:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC11emitWithAckyAA02OnF8CallbackCSS_AA0A4Data_pdtF">emitWithAck(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -853,7 +961,7 @@ will be emitted. The structure of the error data is <code>[eventName, items, the
 <p><strong>NOTE</strong>: It is up to the server send an ack back, just calling this method does not mean the server will ack.
 Check that your server&rsquo;s api will ack the event being sent.</p>
 
-<p>If an error occurs trying to transform <code>items</code> into their socket representation, a <code><a href="../Enums/SocketClientEvent.html#/s:8SocketIO0A11ClientEventO5errorA2CmF">SocketClientEvent.error</a></code>
+<p>If an error occurs trying to transform <code>items</code> into their socket representation, a <code><a href="../Enums/SocketClientEvent.html#/s:8SocketIO0A11ClientEventO5erroryA2CmF">SocketClientEvent.error</a></code>
 will be emitted. The structure of the error data is <code>[eventName, items, theError]</code></p>
 
 <p>Example:</p>
@@ -984,9 +1092,9 @@ Check that your server&rsquo;s api will ack the event being sent.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC7emitAckySi_SayypG4withtF"></a>
+                    <a name="/s:8SocketIO0A8IOClientC7emitAck_4withySi_SayypGtF"></a>
                     <a name="//apple_ref/swift/Method/emitAck(_:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC7emitAckySi_SayypG4withtF">emitAck(_:with:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC7emitAck_4withySi_SayypGtF">emitAck(_:with:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1103,9 +1211,9 @@ Check that your server&rsquo;s api will ack the event being sent.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC17handleClientEventyAA0aeF0O_SayypG4datatF"></a>
+                    <a name="/s:8SocketIO0A8IOClientC17handleClientEvent_4datayAA0aeF0O_SayypGtF"></a>
                     <a name="//apple_ref/swift/Method/handleClientEvent(_:data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC17handleClientEventyAA0aeF0O_SayypG4datatF">handleClientEvent(_:data:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC17handleClientEvent_4datayAA0aeF0O_SayypGtF">handleClientEvent(_:data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1244,9 +1352,9 @@ Check that your server&rsquo;s api will ack the event being sent.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC12handlePacketyAA0aE0VF"></a>
+                    <a name="/s:8SocketIO0A8IOClientC12handlePacketyyAA0aE0VF"></a>
                     <a name="//apple_ref/swift/Method/handlePacket(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC12handlePacketyAA0aE0VF">handlePacket(_:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC12handlePacketyyAA0aE0VF">handlePacket(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1347,9 +1455,9 @@ socket.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC3offyAA0A11ClientEventO06clientF0_tF"></a>
+                    <a name="/s:8SocketIO0A8IOClientC3off11clientEventyAA0a6ClientF0O_tF"></a>
                     <a name="//apple_ref/swift/Method/off(clientEvent:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC3offyAA0A11ClientEventO06clientF0_tF">off(clientEvent:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC3off11clientEventyAA0a6ClientF0O_tF">off(clientEvent:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1557,9 +1665,9 @@ socket.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC2on10Foundation4UUIDVAA0A11ClientEventO06clientH0_ySayypG_AA0A10AckEmitterCtc8callbacktF"></a>
+                    <a name="/s:8SocketIO0A8IOClientC2on11clientEvent8callback10Foundation4UUIDVAA0a6ClientF0O_ySayypG_AA0A10AckEmitterCtctF"></a>
                     <a name="//apple_ref/swift/Method/on(clientEvent:callback:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC2on10Foundation4UUIDVAA0A11ClientEventO06clientH0_ySayypG_AA0A10AckEmitterCtc8callbacktF">on(clientEvent:callback:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC2on11clientEvent8callback10Foundation4UUIDVAA0a6ClientF0O_ySayypG_AA0A10AckEmitterCtctF">on(clientEvent:callback:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1626,9 +1734,9 @@ socket.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SocketIO0A8IOClientC4once10Foundation4UUIDVAA0A11ClientEventO06clientH0_ySayypG_AA0A10AckEmitterCtc8callbacktF"></a>
+                    <a name="/s:8SocketIO0A8IOClientC4once11clientEvent8callback10Foundation4UUIDVAA0a6ClientF0O_ySayypG_AA0A10AckEmitterCtctF"></a>
                     <a name="//apple_ref/swift/Method/once(clientEvent:callback:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SocketIO0A8IOClientC4once10Foundation4UUIDVAA0A11ClientEventO06clientH0_ySayypG_AA0A10AckEmitterCtc8callbacktF">once(clientEvent:callback:)</a>
+                    <a class="token" href="#/s:8SocketIO0A8IOClientC4once11clientEvent8callback10Foundation4UUIDVAA0a6ClientF0O_ySayypG_AA0A10AckEmitterCtctF">once(clientEvent:callback:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1883,8 +1991,8 @@ Called when the manager detects a broken connection, or when a manual reconnect 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://github.com/socketio/socket.io-client-swift" target="_blank" rel="external">Erik</a>. All rights reserved. (Last updated: 2018-07-29)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/socketio/socket.io-client-swift" target="_blank" rel="external">Erik</a>. All rights reserved. (Last updated: 2019-03-28)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

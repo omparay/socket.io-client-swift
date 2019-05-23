@@ -7,6 +7,7 @@
 //  Merely tests whether the Objective-C api breaks
 //
 
+#import "SocketIO_Tests-Swift.h"
 #import "SocketObjectiveCTest.h"
 
 @import Dispatch;
@@ -67,6 +68,20 @@
     [self.socket emit:@"testEmit" with:@[@YES]];
 }
 
+- (void)testEmitWriteCompletionSyntax {
+    [self.socket emit:@"testEmit" with:@[@YES] completion:^{}];
+}
+
+- (void)testEmitWriteCompletion {
+    XCTestExpectation* expect = [self expectationWithDescription:@"Write completion should be called"];
+
+    [self.socket emit:@"testEmit" with:@[@YES] completion:^{
+        [expect fulfill];
+    }];
+
+    [self waitForExpectationsWithTimeout:0.3 handler:nil];
+}
+
 - (void)testRawEmitSyntax {
     [[self.socket rawEmitView] emit:@"myEvent" with:@[@1]];
 }
@@ -82,6 +97,19 @@
 - (void)testSSLSecurity {
     SSLSecurity* sec = [[SSLSecurity alloc] initWithUsePublicKeys:0];
     sec = nil;
+}
+
+- (void)testStatusChangeHandler {
+    XCTestExpectation* expect = [self expectationWithDescription:@"statusChange should be correctly called"];
+
+    [self.socket on:@"statusChange" callback:^(NSArray* data, SocketAckEmitter* ack) {
+        XCTAssertTrue([data[1] integerValue] == SocketIOStatusConnecting);
+        [expect fulfill];
+    }];
+
+    [OBjcUtils setTestStatusWithSocket:self.socket status:SocketIOStatusConnecting];
+
+    [self waitForExpectationsWithTimeout:0.3 handler:nil];
 }
 
 - (void)setUp {
